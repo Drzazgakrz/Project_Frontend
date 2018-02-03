@@ -3,6 +3,7 @@ angular.module('mainContentModule',[]).directive('mainContentDirective',function
         restrict: 'E',
         templateUrl:'scripts/Templates/mainContent.html',
         controller:function($scope){
+            //This is just for future implementations :)
             
         }
     };
