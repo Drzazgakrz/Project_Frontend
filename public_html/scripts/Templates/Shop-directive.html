@@ -1,0 +1,11 @@
+<div>
+    <h1>Oferta sklepu</h1>
+    <div class="row" ng-repeat="product in products track by $index" ng-if="$index%3==0" >
+        <div class="col-md-4" ng-repeat="i in [$index, $index+1, $index+2]" ng-if="products[i]!=null" >
+            <button style="background:none;border: none;" ng-click="products[i].execute()">
+                <img src="{{products[i].source}}" alt="{{products[i].name}}" class="front"/>
+                <span class="title">{{products[i].name}}</span>
+            </button>
+        </div>
+    </div>
+</div>

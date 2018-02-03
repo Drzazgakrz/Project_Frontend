@@ -1,0 +1,11 @@
+<div>
+    <div ng-repeat="option in registrationOption">
+        <label for="{{option.id}}">{{option.optName}}</label>
+        <input type="text" class="form-control" id="{{option.id}}"/>
+    </div>
+    <label for="pass">Hasło</label>
+    <input type="password" class="form-control" id="pass"/> 
+    <label for="repeat">Powtórz hasło</label>
+    <input type="password" class="form-control" id="repeat"/>
+    <input type="button" class="btn btn-primary" ng-click="checkForm()" value="Zarejestruj się"/>    
+</div>
